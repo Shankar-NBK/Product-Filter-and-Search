@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter and Search</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="searchdiv">
+            <input type="search" placeholder="Search here...." id="Search_input"><button class="search_Btn" id="Search_btn">Search</button>
+        <div>
+
+        <div class="buttons">
+            <button class="button-value" onclick="filterProduct('all')">All</button>
+            <button class="button-value" onclick="filterProduct('Topwear')">Topwear</button>
+            <button class="button-value" onclick="filterProduct('Bottomwear')">Bottomwear</button>
+            <button class="button-value" onclick="filterProduct('Jacket')">Jacket</button>
+            <button class="button-value"  onclick="filterProduct('Watch')">Watch</button>
+        </div>
+
+        <div id="products"></div>
+    </div>
+    <script src="script/main.js"></script>
+</body>
+</html>

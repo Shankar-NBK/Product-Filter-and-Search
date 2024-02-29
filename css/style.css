@@ -1,0 +1,122 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    }
+
+html
+{
+    font-size: 10px;
+}    
+body
+{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4rem;
+    background-color: #f8f8f8;
+}
+
+.wrapper
+{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+#searchdiv input
+{
+    background-color: transparent;
+    padding: 1rem 2rem;
+    width: 30%;
+    border-bottom: 1px solid #219ebc;
+}
+
+#searchdiv input:focus
+{
+    border-bottom: 2px solid #219ebc;
+}
+
+#searchdiv .search_Btn
+{
+    margin-top: 2rem;
+    background-color: #219ebc;
+    padding: 1rem 2rem;
+    border: 1px solid #219ebc;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.buttons button
+{
+    margin-top: 2rem;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    border: 1.5px solid #219ebc;
+    color: #219ebc;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.active
+{
+    background-color: #219ebc !important;
+    color: #fff !important;
+}
+
+#products
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 1.8rem;
+    padding: 2rem 0;
+}
+
+.Card
+{
+    max-width: 18rem;
+    background-color: #fff;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border:1px solid #219ebc;
+    box-shadow: 1rem 2rem 2.5rem rgba(1,2,68,0.08);;
+}
+
+.image-container
+{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    object-fit: contain;
+    height: 25rem;
+}
+
+.container
+{
+    padding-top: 1rem;
+    color: #219ebc;
+}
+
+.hide
+{
+    display: none;
+}
+
+@media screen and (max-width:720px) {
+    #products
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 1rem;
+    padding: 2rem 0;
+}
+}
